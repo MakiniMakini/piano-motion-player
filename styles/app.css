@@ -1,0 +1,121 @@
+
+
+body{
+    background-color: blanchedalmond;
+    padding: 10;
+    margin: 30;
+    color: #333;
+} 
+
+#mainContent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index:0;
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -40px;
+}
+
+#canvas-primary {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#canvas-secondary {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 30%;
+}
+
+.motion-cam {
+    display:none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    color: #e22222;
+    bottom: 34%;
+    right: 0;
+    width: 20%;
+    white-space: nowrap;
+}
+
+#piano {
+    display:none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#piano,
+#back,
+.note {
+    width: 100%;
+    height: 0;
+    padding-bottom: 15.8%;
+}
+#piano #back {
+    position: absolute;
+    top: 0;
+    left: .5%;
+    z-index:0;
+    background: url('../images/pianoMax.png') no-repeat top left;
+    background-size: 100%;
+}
+
+
+#piano #front {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+    width: 640px;
+    margin: 0px;
+    padding: 0px;
+}
+#piano #back img, #piano #front img {
+    margin: 0px;
+    padding: 0px;
+}
+#piano #front img {
+    position: absolute;
+    display: none;
+}
+
+.note {
+    width: 12.5%;
+    float: left;
+    background: url('../images/pianoMax.png') no-repeat bottom left;
+    position: relative;
+    z-index: 10;
+    background-size: 800%;
+    opacity: 0;
+}
+#note0 { background-position-x: -0.5%; }
+#note1 { background-position-x: 14%; }
+#note2 { background-position-x: 28.2%; }
+#note3 { background-position-x: 42.6%; }
+#note4 { background-position-x: 56.8%; }
+#note5 { background-position-x: 71.2%; }
+#note6 { background-position-x: 85.2%; }
+#note7 { background-position-x: 100%; }
+
